@@ -13,7 +13,7 @@ The target variable is 'loan_status' where '0' represents a 'Healthy loan' and '
 ## Machine Learning Processes
 
 ### original Dataset
-#### - Data preparation 
+#### Data preparation 
 The data was split between features 'X' which is all of the variables excluding the target variable and the target varaible 'y'. 'value_counts()' functin was used to determine if there is an imbalance. Data was then split using the 'train_test_split' funtion to group the data into training and testing data.
 
 #### Logistic regression model implementation: 
@@ -41,4 +41,4 @@ LogisticRegression model is imported from SKLearn library. The "train" data was 
 * Both models performed really well but model 2 out perfroms model 1 in precision and accuracy as shown above. The number of false negatives (Recall) is lower in model 2
 * Lenders will view False Positives as more costly as they will end up approving a high risk loan that may be defaulted. Therefore a model which provides a lower number of False Negatives will be preferred. Model 2 with the oversampled data provides more accurate predictions than the imbalanced model and would be the recommended model.
 
-If you do not recommend any of the models, please justify your reasoning.
+
